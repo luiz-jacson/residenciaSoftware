@@ -1,0 +1,50 @@
+#cabecalho {
+    width: 100% !important;
+    position: absolute;
+    top: 0px;
+    box-shadow: 0px 0px 3px rgba(1, 22, 51, 0.4);
+}
+
+#dvCabecalho{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#navbarNavDropdown {
+    display: flex !important;
+    justify-content: flex-end !important;
+}
+
+#infoCabecalho p {
+    display: block;
+    font-family: 'Sanchez', sans-serif;
+}
+
+#infoCabecalho a {
+    display: block;
+    color: #011633 !important;
+    padding-bottom: 15px;
+}
+
+#tipoUsuario {
+    font-size: 14px !important;
+    color: #011633 !important;
+}
+
+#matricula {
+    margin-top: -15px;
+    font-size: 14px !important;
+    color: #0116336b !important;
+}
+
+#profileImage{
+    border-radius: 100%; 
+    width: 9vh; 
+    height: 9vh;
+    box-shadow: 2px 2px 5px rgba(1, 22, 51, 0.4);
+}
+
+#imagemIcone{
+    width: 80%;
+    height:80%;
+}

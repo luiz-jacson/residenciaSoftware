@@ -16,7 +16,7 @@ botaoLogin.onclick = function(){
     for(var i = 0 ; i < usuarios.length; i++){
         if(usuarios[i].user == user.value && usuarios[i].password == senha.value){
             logou = true
-            alert("logou")
+            window.location.href = "../professorView/index.html";
         }else{
             alert("nao logou")
         }
