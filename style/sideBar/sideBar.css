@@ -1,57 +1,85 @@
-  
   .sidebar {
-    margin: 0;
-    margin-left: 20px;
-    padding: 0;
-    width: 200px;
-    background-color: white;
-    position: fixed;
-    overflow: auto;
+      margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      width: 200px;
+      background-color: white;
+      position: absolute;
+      overflow: auto;
   }
-  
-  .sidebar div>a {
-    display: block;
-    color: black;
-    padding: 8px;
-    text-decoration: none;
-  }
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
+
+
+
+  .content {
+      margin-left: auto;
+      margin-right: auto;
       height: auto;
-      position: relative;
-    }
-    .sidebar div>a {float: left;}
-    div.content {margin-left: 0;}
+      position: absolute;
+      top: 20vh;
+      left: 22.5%;
   }
-  
+
+  .sidebar div>a {
+      display: block;
+      color: black;
+      padding: 8px;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width: 700px) {
+      .sidebar {
+          margin-left: 0px;
+          width: 100%;
+          height: auto;
+          position: absolute;
+      }
+
+      .sidebar div>a {
+          float: left;
+      }
+
+      div.content {
+          position: absolute;
+          top: 55vh;
+          left: 14%;
+      }
+  }
+
   @media screen and (max-width: 600px) {
-    .sidebar{
-        margin-top: -50vh;
+      .sidebar {
+          margin-left: 0px;
+          margin-top: 0;
+          display: block;
+      }
+
+      .sidebar div a {
+          text-align: center;
+          float: none;
+      }
+
+      .sidebar div p {
+          text-align: center;
+          float: none;
+      }
+      
+      div.content {
+        position: absolute;
+        top: 55vh;
+        left: 14%;
     }
-    .sidebar div a {
-      text-align: center;
-      float: none;
-    }
-    .sidebar div p{
-        text-align: center;
-        float: none;
-    }
   }
 
-  .sidebarTitle{
-    margin-bottom: 0px;
-    font-size: 14px !important;
-    color: #011633 !important;
-    font-weight: 600;
+  .sidebarTitle {
+      margin-bottom: 0px;
+      font-size: 14px !important;
+      color: #011633 !important;
+      font-weight: 600;
   }
 
-  #app{
-    margin-bottom: 30px;
+  #app {
+      margin-bottom: 30px;
   }
 
-  .iconeSideBar{
-    margin-right: 5px;
+  .iconeSideBar {
+      margin-right: 5px;
   }
-
-
