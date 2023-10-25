@@ -1,0 +1,198 @@
+  .sidebar {
+      margin: 0;
+      margin-left: 20px;
+      padding: 0;
+      width: 200px;
+      background-color: white;
+      position: absolute;
+      overflow: auto;
+  }
+
+
+
+  .content {
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      position: absolute;
+      top: 20vh;
+      left: 22.5%;
+  }
+
+  .sidebar div>a {
+      display: block;
+      color: black;
+      padding: 8px;
+      text-decoration: none;
+  }
+
+  @media screen and (max-width: 700px) {
+      .sidebar {
+          margin-left: 0px;
+          width: 100%;
+          height: auto;
+          position: absolute;
+      }
+
+      .sidebar div>a {
+          float: left;
+      }
+
+      div.content {
+          position: absolute;
+          top: 55vh;
+          left: 14%;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+      .sidebar {
+          margin-left: 0px;
+          margin-top: 0;
+          display: block;
+      }
+
+      .sidebar div a {
+          text-align: center;
+          float: none;
+      }
+
+      .sidebar div p {
+          text-align: center;
+          float: none;
+      }
+      
+      div.content {
+        position: absolute;
+        top: 55vh;
+        left: 14%;
+    }
+  }
+
+  .sidebarTitle {
+      margin-bottom: 0px;
+      font-size: 14px !important;
+      color: #011633 !important;
+      font-weight: 600;
+  }
+
+  #app {
+      margin-bottom: 30px;
+  }
+
+  .iconeSideBar {
+      margin-right: 5px;
+  }
+
+  .botaomaterias {
+    width: 110px !important;
+    height: 30px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white !important;
+    border: 2px solid #011633 ;
+    margin: 0 !important;
+}
+
+
+.materias {
+    position: relative;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+.materias-child {
+    display: none;
+    min-width: 200px;
+    position: fixed;
+    background-color: white;
+
+}
+
+
+.materias:hover .materias-child {
+    display: block;
+}
+
+main{
+    display:flex;
+}
+
+.blocos{
+    display:flex;
+    justify-content: space-between;
+    width: 65%;
+    align-items: center;
+}
+
+.data{
+    display:flex;
+    align-items: center;
+}
+
+.conteudo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.data input{
+    height: min-content;
+}
+
+.data p{
+    margin: 10px;
+}
+
+.data input{
+    width: 115px;
+    height: 24px;
+    border: 2px solid #011633 ;
+    border-radius: 5px;
+}
+
+.barralateral{
+    width: 300px;
+    margin-top: 30px;
+}
+
+.barralateral li{
+    margin: 10px 0;
+}
+
+.tabela{
+    border: 2px solid #011633 ;
+    width: 65%;
+    height: 50vh;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    overflow: auto;
+    margin-right: 0px;
+    margin-left: 10px;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #011633;
+}
+
+.dados p {
+    margin: 0;
+}
+
+.botaovoltar button {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #011633;
+    color: white;
+    border-radius: 10px;
+}
+
+.botaovoltar {
+    width: 100%;
+    margin-left: 154%;
+}
