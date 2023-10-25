@@ -1,0 +1,17 @@
+.imagemMenu{
+    width: 35vh;
+    height: 30vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.itemMenu{
+    padding-right: 10vh;
+    padding-bottom: 7vh;
+
+}
+
+.labelImagem{
+    font-size: 16px !important;
+    color: #011633 !important;
+    font-weight: 500;
+}
