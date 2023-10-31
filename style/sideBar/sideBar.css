@@ -76,6 +76,10 @@
       font-weight: 600;
   }
 
+  .custom-swal-title-font {
+    font-size: 20px; 
+}
+
   #app {
       margin-bottom: 30px;
   }

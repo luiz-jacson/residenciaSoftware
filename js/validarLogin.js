@@ -1,3 +1,4 @@
+
 const usuarios = [{
     "id": 1,
     "user": "aluno",
@@ -33,50 +34,93 @@ const usuarios = [{
 var user = document.getElementById("usuario")
 var senha = document.getElementById("senha")
 var botaoLogin = document.getElementById("botaoLogin")
+var botaoSair = document.getElementById('botaoSair')
 var formulario = document.getElementById("form")
 if (botaoLogin) {
     botaoLogin.onclick = function () {
-        var invalidLabel = document.getElementById('usuarioInvalido')
-        formulario.onsubmit = function (event) {
-            event.preventDefault();
-        }
-        let logou = false
-        for (var i = 0; i < usuarios.length; i++) {
-            if (usuarios[i].user == user.value && usuarios[i].password == senha.value) {
-                logou = true
-                if (usuarios[i].tipoUsuario == 'aluno') {
-                    window.location.href = "../alunoView/index.html";
-                }
-                if (usuarios[i].tipoUsuario == 'professor') {
-                    window.location.href = "../professorView/index.html";
-                }
-                localStorage.setItem('usuario', JSON.stringify(usuarios[i]));
-                break;
-            } else {
-                console.log(user.value)
-                console.log(senha.value)
+        verificaSessao().then(() => {
+            var invalidLabel = document.getElementById('usuarioInvalido')
+            formulario.onsubmit = function (event) {
+                event.preventDefault();
             }
-        }
-        if (logou == false) {
-            console.log(invalidLabel)
-            console.log(logou)
-            invalidLabel.setAttribute('style', 'color: red;margin-bottom: 10px;')
-            invalidLabel.style.display = "block";
-        }
+            let logou = false
+            for (var i = 0; i < usuarios.length; i++) {
+                if (usuarios[i].user == user.value && usuarios[i].password == senha.value) {
+                    logou = true
+                    if (usuarios[i].tipoUsuario == 'aluno') {
+                        window.location.href = "../alunoView/index.html";
+                    }
+                    if (usuarios[i].tipoUsuario == 'professor') {
+                        window.location.href = "../professorView/index.html";
+                    }
+                    localStorage.setItem('usuario', JSON.stringify(usuarios[i]));
+                    break;
+                } else {
+                    console.log(user.value)
+                    console.log(senha.value)
+                }
+            }
+            if (logou == false) {
+                console.log(invalidLabel)
+                console.log(logou)
+                invalidLabel.setAttribute('style', 'color: red;margin-bottom: 10px;')
+                invalidLabel.style.display = "block";
+            }
+        })
+
     }
 }
 
-const verificaSessao = () => {
+const verificaSessao = async () => {
+    var pagina = document.getElementById("body-pd")
+    console.log(pagina)
     let sessao = localStorage.getItem('usuario') ? JSON.parse(localStorage.getItem('usuario')) : null;
-    if (sessao == null && JSON.parse(localStorage.getItem('sessao')) == 'naoVerificada') {
+    console.log(sessao)
+    if (sessao == null && localStorage.getItem('sessao') == 'naoVerificada') {
+        console.log('aqui')
+        pagina.setAttribute('style', 'display:none')
         localStorage.setItem('sessao', 'verificada');
         window.location.href = "../login/index.html";
-    }else if( sessao != null ){
+    } else if (sessao != null) {
+        pagina.setAttribute('style', '')
+        console.log('aqui2')
         console.log(sessao)
         localStorage.setItem('sessao', 'naoVerificada');
+    } else {
+        pagina.setAttribute('style', '')
+        console.log('aqui3')
+        localStorage.setItem('sessao', 'naoVerificada');
     }
+
+
 };
+
+
+if (botaoSair) {
+    botaoSair.onclick = function () {
+        Swal.fire({
+            title: 'Deseja sair?',
+            titleColor: `#011633`,
+            titleFontSize: `10px`,
+            showDenyButton: true,
+            confirmButtonText: 'Sim',
+            denyButtonText: `Não`,
+            confirmButtonColor: `#011633`,
+            denyButtonColor: `gray`,
+            width: `35vh`,
+            customClass: {
+                title: 'custom-swal-title-font',
+            }
+        }).then((result) => {
+            if (result.isConfirmed) {
+                localStorage.removeItem('usuario')
+                window.location.href = "../login/index.html";
+            }
+        })
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     verificaSessao();
-});
+})
+

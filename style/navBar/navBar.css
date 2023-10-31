@@ -49,6 +49,10 @@ nav{
     color: #011633 !important;
 }
 
+.dropdown-item{
+    color: #011633 !important;
+}
+
 #matricula {
     margin-top: -20px;
     font-size: 14px !important;
