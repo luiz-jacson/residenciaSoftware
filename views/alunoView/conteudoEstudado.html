@@ -19,10 +19,9 @@
     <link href="../../style/alunoView/menuBemVindo.css" rel="stylesheet">
     <link href="../../style/sideBar/sideBar.css" rel="stylesheet">
 
-
 </head>
 
-<body id="body-pd" style="display: none !important;">
+<body id="body-pd">
     <header id="cabecalho" class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div id="dvCabecalho" class="">
@@ -73,32 +72,163 @@
                         src="../../resources/cog-1.png">Configurações</a></div>
         </div>
     </div>
-    <div class="content">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4 text-center itemMenu">
-                    <img class="imagemMenu" src="../../resources/conteudo.png">
-                    <p class="labelImagem">Conteúdo</p>
-                </div>
-                <div class="col-md-4 text-center itemMenu">
-                    <img class="imagemMenu" src="../../resources/feedback.webp">
-                    <p class="labelImagem">Feedback</p>
-                </div>
-                <div class="col-md-4 text-center itemMenu">
-                    <img class="imagemMenu" src="../../resources/provaseatividades.png">
-                    <p class="labelImagem">Provas e Atividades</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="row">
+    <div class="conteudo">
+        <h1>
+            Conteúdo Estudado
+        </h1>
+        <p>
+            Professora: Andrea Ribeiro da Costa Silva 
+        </p>
+        <div class="blocos">
+            <div class="data">
+                <p>
+                    De:
+                </p>
+                <input type="date" name="inicio" id="inicio">
+                <p>
+                    Até:
+                </p>
+                <input type="date" name="fim" id="fim">
 
-                <div class="col-md-4 text-center itemMenu">
-                    <img class="imagemMenu" src="../../resources/frequencia.jpg">
-                    <p class="labelImagem">Frequência</p>
+            </div>
+            <div class="materias">
+                <button class="botaomaterias">
+                    Matérias
+                </button>
+                <div class="materias-child">
+                    <p>
+                        Matemática
+                    </p>
+                    <p>
+                        História
+                    </p>
+                    <p>
+                        Biologia
+                    </p>
+                    
                 </div>
             </div>
         </div>
+        <div class="tabela">
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    16/09/2002
+                </p>
+                <p>
+                    Conjunção
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+            <div class="dados">
+                <p>
+                    23/02/2002
+                </p>
+                <p>
+                    Gêneros Textuais
+                </p>
+            </div>
+        </div>
+        <div class="botaovoltar">
+            <button>
+                Voltar
+            </button>
+        </div>
+
     </div>
     <script src="../../js/sideBar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -108,7 +238,8 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../js/validarLogin.js" ></script>
+    <script src="../../js/validarLogin.js"></script>
 </body>
+
 
 </html>

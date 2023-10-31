@@ -56,13 +56,9 @@ if (botaoLogin) {
                     localStorage.setItem('usuario', JSON.stringify(usuarios[i]));
                     break;
                 } else {
-                    console.log(user.value)
-                    console.log(senha.value)
                 }
             }
             if (logou == false) {
-                console.log(invalidLabel)
-                console.log(logou)
                 invalidLabel.setAttribute('style', 'color: red;margin-bottom: 10px;')
                 invalidLabel.style.display = "block";
             }
@@ -73,16 +69,12 @@ if (botaoLogin) {
 
 const verificaSessao = async () => {
     var pagina = document.getElementById("body-pd")
-    console.log(pagina)
     let sessao = localStorage.getItem('usuario') ? JSON.parse(localStorage.getItem('usuario')) : null;
-    console.log(sessao)
     if (sessao == null && localStorage.getItem('sessao') == 'naoVerificada') {
-        console.log('aqui')
         if (pagina) {
             pagina.setAttribute('style', 'display:none')
         }
         localStorage.setItem('sessao', 'verificada');
-        console.log(window.location.href)
         if (!window.location.href.includes("login")) {
             window.location.href = "../login/index.html";
         }
@@ -90,14 +82,21 @@ const verificaSessao = async () => {
         if (pagina) {
             pagina.setAttribute('style', '')
         }
-        console.log('aqui2')
-        console.log(sessao)
+        if(sessao.tipoUsuario == 'professor'){
+            if(window.location.href.includes("alunoView") || window.location.href.includes("login") ){
+                window.location.href = "../professorView/index.html"; 
+            }
+        }
+        if(sessao.tipoUsuario == 'aluno'){
+            if(window.location.href.includes("professorView") || window.location.href.includes("login") ){
+                window.location.href = "../alunoView/index.html"; 
+            }
+        }
         localStorage.setItem('sessao', 'naoVerificada');
     } else {
         if (pagina) {
             pagina.setAttribute('style', '')
         }
-        console.log('aqui3')
         localStorage.setItem('sessao', 'naoVerificada');
     }
 
@@ -122,6 +121,7 @@ if (botaoSair) {
             }
         }).then((result) => {
             if (result.isConfirmed) {
+                localStorage.removeItem('sessao')
                 localStorage.removeItem('usuario')
                 window.location.href = "../login/index.html";
             }

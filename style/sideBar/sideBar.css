@@ -40,7 +40,7 @@
 
       div.content {
           position: absolute;
-          top: 55vh;
+          top: 65vh;
           left: 14%;
       }
   }
@@ -64,7 +64,7 @@
       
       div.content {
         position: absolute;
-        top: 55vh;
+        top: 65vh;
         left: 14%;
     }
   }
@@ -87,3 +87,117 @@
   .iconeSideBar {
       margin-right: 5px;
   }
+
+
+.botaomaterias {
+  width: 110px !important;
+  height: 30px !important;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white !important;
+  border: 2px solid #011633 ;
+  margin: 0 !important;
+}
+
+
+.materias {
+  position: relative;
+  display: inline-block;
+  margin-right: 0px;
+}
+
+.materias-child {
+  display: none;
+  min-width: 200px;
+  position: fixed;
+  background-color: white;
+
+}
+
+
+.materias:hover .materias-child {
+  display: block;
+}
+
+main{
+  display:flex;
+}
+
+.blocos{
+  display:flex;
+  justify-content: space-between;
+  width: 65%;
+  align-items: center;
+}
+
+.data{
+  display:flex;
+  align-items: center;
+}
+
+.conteudo{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.data input{
+  height: min-content;
+}
+
+.data p{
+  margin: 10px;
+}
+
+.data input{
+  width: 115px;
+  height: 24px;
+  border: 2px solid #011633 ;
+  border-radius: 5px;
+}
+
+.barralateral{
+  width: 300px;
+  margin-top: 30px;
+}
+
+.barralateral li{
+  margin: 10px 0;
+}
+
+.tabela{
+  border: 2px solid #011633 ;
+  width: 65%;
+  height: 50vh;
+  border-radius: 10px;
+  padding-bottom: 40px;
+  overflow: auto;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.dados{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 2px solid #011633;
+}
+
+.dados p {
+  margin: 0;
+}
+
+.botaovoltar button {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #011633;
+  color: white;
+  border-radius: 10px;
+}
+
+.botaovoltar {
+  width: 100%;
+  margin-left: 154%;
+}
