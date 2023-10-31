@@ -2,30 +2,34 @@
 const usuarios = [{
     "id": 1,
     "user": "aluno",
-    "userName": "aluno da silva",
+    "userName": "Aluno da silva",
     "password": "123",
-    "tipoUsuario": "aluno"
+    "tipoUsuario": "aluno",
+    "matricula" : "1234"
 },
 {
     "id": 2,
     "user": "professor",
-    "userName": "professor da silva",
+    "userName": "Professor da silva",
     "password": "123",
-    "tipoUsuario": "professor"
+    "tipoUsuario": "professor",
+    "matricula" : "5678"
 },
 {
     "id": 3,
     "user": "responsavel",
-    "userName": "responsável da silva",
+    "userName": "Responsável da silva",
     "password": "123",
-    "tipoUsuario": "responsavel"
+    "tipoUsuario": "responsavel",
+    "matricula" : "91011"
 },
 {
     "id": 4,
     "user": "coordenador",
-    "userName": "coordenador da silva",
+    "userName": "Coordenador da silva",
     "password": "123",
-    "tipoUsuario": "coordenador"
+    "tipoUsuario": "coordenador",
+    "matricula" : "1112"
 },
 ]
 
@@ -67,6 +71,15 @@ if (botaoLogin) {
     }
 }
 
+
+const updateSessao = async(usuario) => {
+    let tipoUsuario = document.getElementById('tipoUsuario')
+    let matricula = document.getElementById('matricula')
+    tipoUsuario.innerHTML = usuario.tipoUsuario.charAt(0).toUpperCase() + usuario.tipoUsuario.substring(1) + ': ' + usuario.userName
+    matricula.innerHTML = 'Matrícula: ' + usuario.matricula
+}
+
+
 const verificaSessao = async () => {
     var pagina = document.getElementById("body-pd")
     let sessao = localStorage.getItem('usuario') ? JSON.parse(localStorage.getItem('usuario')) : null;
@@ -82,17 +95,19 @@ const verificaSessao = async () => {
         if (pagina) {
             pagina.setAttribute('style', '')
         }
-        if(sessao.tipoUsuario == 'professor'){
-            if(window.location.href.includes("alunoView") || window.location.href.includes("login") ){
-                window.location.href = "../professorView/index.html"; 
+        updateSessao(sessao).then(() => {
+            if(sessao.tipoUsuario == 'professor'){
+                if(window.location.href.includes("alunoView") || window.location.href.includes("login") ){
+                    window.location.href = "../professorView/index.html"; 
+                }
             }
-        }
-        if(sessao.tipoUsuario == 'aluno'){
-            if(window.location.href.includes("professorView") || window.location.href.includes("login") ){
-                window.location.href = "../alunoView/index.html"; 
+            if(sessao.tipoUsuario == 'aluno'){
+                if(window.location.href.includes("professorView") || window.location.href.includes("login") ){
+                    window.location.href = "../alunoView/index.html"; 
+                }
             }
-        }
-        localStorage.setItem('sessao', 'naoVerificada');
+            localStorage.setItem('sessao', 'naoVerificada');
+        })
     } else {
         if (pagina) {
             pagina.setAttribute('style', '')
