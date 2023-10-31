@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)https://getbootstrap.com/docs/5.0/examples/sign-in/ -->
 <html lang="en">
 
 <head>
@@ -30,7 +29,7 @@
             z-index: -2;
         }
 
-        img{
+        img {
             z-index: 2 !important;
         }
 
@@ -55,15 +54,14 @@
                 font-size: 3.5rem;
             }
         }
-        #usuarioInvalido{
+
+        #usuarioInvalido {
             color: red;
             margin-bottom: 10px;
             display: none;
         }
     </style>
 
-
-    <!-- Custom styles for this template -->
     <link href="../../style/bootstrap/signin.css" rel="stylesheet">
 </head>
 
@@ -71,19 +69,17 @@
     <main class="form-signin">
         <div id="azul">
         </div>
-        <div class="" style="margin-bottom: 14.5vh;">
+        <div class="" style="margin-bottom: 14.5vh; margin-left: -2vh !important;">
             <img src="../../resources/nome-escola.png" alt="">
         </div>
-        <!-- <div class="" style="margin-bottom: 15px;">
-            <img src="./resources/perfil-usuario.png"alt="">
-        </div> -->
         <div class="" style="margin-bottom: 15px;">
             <img src="../../resources/perfil.jpg" style="border-radius: 100%; border: 3px solid white;" alt="">
         </div>
         <div class="row">
             <form id="form">
                 <div class="form-floating" style="margin-bottom: 15px !important;">
-                    <input id="usuario" type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input id="usuario" type="text" class="form-control" id="floatingInput"
+                        placeholder="name@example.com">
                     <label for="floatingInput">Usuário</label>
                 </div>
                 <div class="form-floating">
@@ -96,8 +92,8 @@
                 <div id="usuarioInvalido">
                     Usuário ou Senha inválidos!
                 </div>
-                <button id="botaoLogin" class="w-100 btn btn-lg btn-primary" style="background-color: #011633 !important;"
-                    type="submit">Login</button>
+                <button id="botaoLogin" class="w-100 btn btn-lg btn-primary"
+                    style="background-color: #011633 !important;" type="submit">Login</button>
             </form>
         </div>
     </main>
