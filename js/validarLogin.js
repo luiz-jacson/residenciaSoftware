@@ -78,16 +78,25 @@ const verificaSessao = async () => {
     console.log(sessao)
     if (sessao == null && localStorage.getItem('sessao') == 'naoVerificada') {
         console.log('aqui')
-        pagina.setAttribute('style', 'display:none')
+        if (pagina) {
+            pagina.setAttribute('style', 'display:none')
+        }
         localStorage.setItem('sessao', 'verificada');
-        window.location.href = "../login/index.html";
+        console.log(window.location.href)
+        if (!window.location.href.includes("login")) {
+            window.location.href = "../login/index.html";
+        }
     } else if (sessao != null) {
-        pagina.setAttribute('style', '')
+        if (pagina) {
+            pagina.setAttribute('style', '')
+        }
         console.log('aqui2')
         console.log(sessao)
         localStorage.setItem('sessao', 'naoVerificada');
     } else {
-        pagina.setAttribute('style', '')
+        if (pagina) {
+            pagina.setAttribute('style', '')
+        }
         console.log('aqui3')
         localStorage.setItem('sessao', 'naoVerificada');
     }
