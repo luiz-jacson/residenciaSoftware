@@ -188,16 +188,22 @@ main{
   margin: 0;
 }
 
-.botaovoltar button {
+.botaovoltar a {
   width: 90px;
   height: 30px;
   margin-top: 10px;
   background-color: #011633;
   color: white;
   border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .botaovoltar {
   width: 100%;
-  margin-left: 154%;
+  margin-left: 45vh;
+  margin-top: 5vh;
 }
