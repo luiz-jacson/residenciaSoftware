@@ -113,9 +113,9 @@ body {
 }
 
 .item-sidebar ul li:hover a,
-.item-sidebar ul li.active a {
+.item-sidebar ul li.ativado a {
     color: #011633 !important;
-    background-color: #f6f6f6 !important;
+    background-color: #ffffff !important;
 }
 
 .item-sidebar ul li .icon {
@@ -144,8 +144,8 @@ body {
     justify-content: center !important;
     cursor: pointer !important;
     color: #011633 !important;
-    border-color: 2px solid #f6f6f6 !important;
-    background-color: #eee !important;
+    border-color: 2px solid #ffffff !important;
+    background-color: #ffffff !important;
     margin-left: 30px !important;
 
 }
@@ -158,44 +158,44 @@ body {
     transition: all 0.3s !important;
 }
 
-.sidebar.active {
+.sidebar.ativado {
     width: 92px !important;
 }
 
-.sidebar.active .menu-menor i {
+.sidebar.ativado .menu-menor i {
     transform: rotate(180deg) !important;
 }
 
-.sidebar.active .detalhes-usuario, .nome-aplicacao {
+.sidebar.ativado .detalhes-usuario, .nome-aplicacao {
     display: none !important;
 }
 
-.sidebar.active .item-sidebar .nome-aplicacao {
+.sidebar.ativado .item-sidebar .nome-aplicacao {
     text-align: center !important;
 }
 
-.sidebar.active .item-sidebar > ul > li > a {
+.sidebar.ativado .item-sidebar > ul > li > a {
     position: relative !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
 }
 
-.sidebar.active .item-sidebar > ul > li > a .item-nome {
+.sidebar.ativado .item-sidebar > ul > li > a .item-nome {
     position: absolute !important;
     left: 70px !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
     padding: 10px !important;
     border-radius: 4px !important;
-    color: #eee !important;
+    color: #ffffff !important;
     background-color: #011633 !important;
     opacity: 0 !important;
     visibility: hidden !important;
     transition: all !important;
 }
 
-.sidebar.active .item-sidebar > ul > li > a .item-nome::after {
+.sidebar.ativado .item-sidebar > ul > li > a .item-nome::after {
     content: "" !important;
     position: absolute !important;
     left: -5px !important;
@@ -208,7 +208,7 @@ body {
     z-index: -1 !important;
 }
 
-.sidebar.active .item-sidebar > ul > li > a:hover .item-nome {
+.sidebar.ativado .item-sidebar > ul > li > a:hover .item-nome {
     left: 50px !important;
     opacity: 1 !important;
     visibility: visible !important;
@@ -241,7 +241,7 @@ main .filtros {
 }
 
 main .filtro-frequencia {
-    margin-left: 230px !important;
+    margin-left: 400px !important;
     margin-top: 30px !important;
 }
 
@@ -288,7 +288,7 @@ main .footer {
     margin-top: 10px !important;
     display: flex !important;
     align-items: center !important;
-    margin-left: 225px !important;
+    margin-left: 400px !important;
     gap: 660px !important;
 }
 
@@ -330,7 +330,7 @@ main .footer .botao {
     }
     main .filtro-frequencia {
         margin-top: 20px !important;
-        margin-left: 55px !important;
+        margin-left: 40px !important;
         text-align: left !important;
         font-size: 16px !important;
     }

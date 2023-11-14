@@ -8,237 +8,189 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Escola Teste</title>
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <meta name="theme-color" content="#7952b3">
-    <link href="../../style/bootstrap/signin.css" rel="stylesheet">
-    <link href="../../style/navBar/navBar.css" rel="stylesheet">
-    <link href="../../style/alunoView/menuBemVindo.css" rel="stylesheet">
-    <link href="../../style/sideBar/sideBar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS-->
+    <link rel="stylesheet" href="../../style/alunoView/feedback.css"> <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
 
 </head>
 
-<body id="body-pd">
-    <header id="cabecalho" class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div id="dvCabecalho" class="">
-                <div id="infoCabecalho">
-                    <a id="iconeEscola" class="navbar-brand" href="#"><img id="imagemIcone"
-                            src="../../resources/logo_darkBlue.png" alt=""></a>
-                    <p id="tipoUsuario">Aluno</p>
-                    <p id="matricula">Matrícula: 20231111</p>
+<body>
+    <aside>
+        <div class="sidebar active">
+            <div class="menu-menor">
+                <i class='bx bxs-chevron-left' ></i>
+            </div>
+            <div class="head">
+                <div class="usuario-img">
+                    <i class='bx bxs-user-circle'></i>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <a id="iconeChat" class="navbar-brand" href="#"><img id="chatIcone" src="../../resources/chat.png"
-                            alt=""></a>
-                    <div class="dropdown">
-                        <a id="iconeProfile" class="navbar-brand" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img id="profileImage" src="../../resources/perfil.jpg" alt="">
+                <div class="detalhes-usuario">
+                    <p class="nome-usuario">Guilherme Esteves</p>
+                    <p class="matricula-usuario">000000000</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="item-sidebar">
+                    <div class="aplicacao">
+                        <p class="nome-aplicacao">Aplicação</p>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="../alunoView/index.html">
+                                <i class='bx bxs-grid-alt icon'></i>
+                                <span class="item-nome">Menu</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../alunoView/conteudoEstudado.html">
+                                <i class='bx bxs-videos icon'></i>
+                                <span class="item-nome">Conteúdo</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../alunoView/provas-atividades.html">
+                                <i class='bx bxs-file icon'></i>
+                                <span class="item-nome">Provas e Atividades</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../alunoView/boletim.html">
+                                <i class='bx bxs-book icon'></i>
+                                <span class="item-nome">Notas</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../alunoView/frequencia.html">
+                                <i class='bx bx-line-chart icon'></i>
+                                <span class="item-nome">Frequência</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../alunoView/paginaFeedBack.html">
+                                <i class='bx bxs-message-dots icon'></i>
+                                <span class="item-nome">FeedBack</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-sidebar active">
+                <div class="aplicacao">
+                    <p class="nome-aplicacao">Conta</p>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-help-circle icon' ></i>
+                            <span class="item-nome">Ajuda</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuClickableInside">
-                            <li><a class="dropdown-item" href="#">Perfil</a></li>
-                            <li><a class="dropdown-item" href="#" id="botaoSair">Sair</a></li>
-                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#" id="botaoSair">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="item-nome">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="conteudo">
+            <h1 id="titulo">
+                FeedBack
+            </h1>
+            <p>
+                Professora: Andrea Ribeiro da Costa Silva
+            </p>
+            <div class="filtros">
+                <div class="datas">
+                    <div class="de">
+                        <p>De:</p>
+                        <input type="date" name="inicio" id="inicio">
+                    </div>
+                    <div class="ate">
+                        <p>Até:</p>
+                        <input type="date" name="fim" id="fim">
+                    </div>
+                </div>
+                <div class="materias">
+                    <button class="botaomaterias">
+                        Professores
+                    </button>
+                    <div class="materias-child">
+                        <p>Andrea</p>
+                        <p>Augusto</p>
+                        <p>Roberto</p>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="sidebar">
-        <div id="app">
-            <p class="sidebarTitle">Aplicações</p>
-            <div class="itemSideBar"><a href="../alunoView/paginaFeedBack.html"><img class="iconeSideBar"
-                        src="../../resources/study-virtual-classroom-2-1.png">FeedBack</a></div>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar"
-                        src="../../resources/online-learning-exam-2-1.png">Planejamento do Dia</a></div>
-            <div class="itemSideBar"><a href="../alunoView/conteudoEstudado.html"><img class="iconeSideBar"
-                        src="../../resources/conteudoEstudado.png">Conteúdo</a></div>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar"
-                        src="../../resources/school-exam-a-alternate-1.png">Provas e Atividades</a></div>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar"
-                        src="../../resources/image-1.png">Frequência</a></div>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar" src="../../resources/notas.png">Notas</a>
-            </div>
-        </div>
-        <div id="outros">
-            <p class="sidebarTitle">Outros</p>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar"
-                        src="../../resources/messaging-imessage-2.png">Notificações</a></div>
-            <div class="itemSideBar"><a href="#home"><img class="iconeSideBar"
-                        src="../../resources/cog-1.png">Configurações</a></div>
-        </div>
-    </div>
-    <div class="conteudo">
-        <h1>
-            FeedBack
-        </h1>
-        <p>
-            Professora: Andrea Ribeiro da Costa Silva
-        </p>
-        <div class="blocos">
-            <div class="data">
-                <p>
-                    De:
-                </p>
-                <input type="date" name="inicio" id="inicio">
-                <p>
-                    Até:
-                </p>
-                <input type="date" name="fim" id="fim">
-
-            </div>
-            <div class="materias">
-                <button class="botaomaterias">
-                    Professores
-                </button>
-                <div class="materias-child">
-                    <p>
-                        Andrea
-                    </p>
-                    <p>
-                        Augusto
-                    </p>
-                    <p>
-                        Roberto
-                    </p>
-
+            <div class="tabelasss">
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>16/09/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
+                </div>
+                <div class="dados">
+                    <p>23/02/2002</p>
+                    <p>Comportamento</p>
                 </div>
             </div>
         </div>
-        <div class="tabela">
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    16/09/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-            <div class="dados">
-                <p>
-                    23/02/2002
-                </p>
-                <p>
-                    Comportamento
-                </p>
-            </div>
-        </div>
-        <div class="botaovoltar">
-            <button>
-                Voltar
-            </button>
-        </div>
-
-    </div>
+    </main>
     <script src="../../js/sideBar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../../js/validarLogin.js"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+    crossorigin="anonymous"
+  ></script> <!--JQUERY-->
+  <script src="../../js/scripts.js"></script> <!--JavaScript-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../../js/validarLogin.js"></script>
 </body>
 
 

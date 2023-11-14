@@ -1,0 +1,188 @@
+#titulo{
+    font-size: 56px !important;
+}
+
+.botaomaterias {
+    width: 110px !important;
+    height: 30px !important;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white !important;
+    border: 2px solid #011633 ;
+    margin: 0 !important;
+}
+
+
+@media screen and (max-width: 700px) {
+    main{
+        margin-left: 8vh !important;
+    }
+    #titulo{
+        font-size: 24px !important;
+    }
+    .tabelasss{
+        border: 2px solid #011633  ;
+        width: 40vh  !important;
+        height: 50vh ;
+        padding-bottom: 40px ;
+        overflow: auto ;
+        border-radius: 3px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #titulo{
+        font-size: 24px !important;
+    }
+    .tabelasss{
+        border: 2px solid #011633  ;
+        width: 40vh !important;
+        height: 50vh ;
+        padding-bottom: 40px ;
+        overflow: auto ;
+        border-radius: 3px !important;
+    }
+}
+
+main{
+    margin-top: 8vh !important;
+}
+
+.materias {
+    position: relative;
+    display: flex;
+}
+
+.materias-child {
+    display: none;
+    min-width: 200px;
+    position: fixed;
+    background-color: white;
+
+}
+
+
+.materias:hover .materias-child {
+    display: block;
+}
+
+main{
+    display:flex;
+}
+
+div.dados > img{
+    margin: 5px !important;
+}
+.filtros{
+    display: flex;
+    justify-content: left;
+    gap: 900px;
+}
+.datas{
+    gap: 20px;
+    margin-top: 3vh !important;
+    margin-bottom: 1vh !important;
+    display:flex ;
+    justify-content: center;
+    width: 100% ;
+    align-items: center ;
+    margin-right: 200px;
+}
+
+.de{
+    gap: 5px;
+    display:flex;
+    align-items: center;
+}
+.ate{
+    gap: 5px;
+    display:flex;
+    align-items: center;
+}
+
+.conteudo{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.de P, .ate p{
+    font-size: 18px;
+}
+
+.de input, .ate input{
+    font-size: 16px;
+    height: 3vh;
+    width: 14vh;
+    align-self: center;
+    border: 2px solid #011633 ;
+    border-radius: 5px;
+}
+
+.barralateral{
+    width: 300px;
+    margin-top: 30px;
+}
+
+.barralateral li{
+    margin: 10px 0;
+}
+
+.tabelasss{
+    border: 2px solid #011633  ;
+    width: 150vh ;
+    height: 50vh ;
+    padding-bottom: 40px ;
+    overflow: auto ;
+    border-radius: 3px !important;
+
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid #011633;
+    align-items: center;
+}
+
+.dados p {
+    margin: 0;
+}
+
+.botaovoltar button {
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #011633;
+    color: white;
+    border-radius: 10px;
+}
+
+.botaovoltar {
+    width: 100%;
+    margin-left: 154%;
+}
+
+
+.middle-text {
+    flex: 2; 
+    text-align: center;
+    margin-right: 70px;
+    text-align: block;
+}
+
+
+.middle-text2 {
+    flex: 2; 
+    text-align: center;
+    margin-right: 70px;
+    text-align: block;
+}
+
+.dados img {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px; 
+}
