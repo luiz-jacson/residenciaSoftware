@@ -7,6 +7,25 @@
     font-family: 'Sanchez', serif !important;
 }
 
+.custom-swal-title-font {
+    font-size: 24px !important;
+    padding: 20px !important; /* Ajuste o valor conforme necessário */
+}
+
+.swal2-actions{
+    padding-bottom: 20px !important;
+}
+
+.swal2-confirm{
+    padding: 8px !important;
+    margin-right: 8px !important;
+}
+
+.swal2-deny{
+    padding: 8px !important;
+    margin-left: 8px !important;
+}
+
 body {
     background-color: rgb(255, 255, 255) !important;
     display: flex !important;

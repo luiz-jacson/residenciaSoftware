@@ -130,7 +130,7 @@ if (botaoSair) {
             denyButtonText: `Não`,
             confirmButtonColor: `#011633`,
             denyButtonColor: `gray`,
-            width: `35vh`,
+            width: `40vh`,
             customClass: {
                 title: 'custom-swal-title-font',
             }
