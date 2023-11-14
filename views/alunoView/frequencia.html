@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
+
+
+    <title>Aluno - Home</title>
+</head>
+<body>
+    <aside>
+        <div class="sidebar active">
+            <div class="menu-menor">
+                <i class='bx bxs-chevron-left' ></i>
+            </div>
+            <div class="head">
+                <div class="usuario-img">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="detalhes-usuario">
+                    <p class="nome-usuario">Guilherme Esteves</p>
+                    <p class="matricula-usuario">000000000</p>
+                </div>
+            </div>
+            <div class="nav">
+                    <div class="item-sidebar">
+                    <div class="aplicacao">
+                        <p class="nome-aplicacao">Aplicação</p>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-grid-alt icon' ></i>
+                                <span class="item-nome">Menu</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-videos icon'></i>
+                                <span class="item-nome">Conteúdo</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-file icon' ></i>
+                                <span class="item-nome">Provas e Atividades</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-book icon'></i>
+                                <span class="item-nome">Notas</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bx-line-chart icon'></i>
+                                <span class="item-nome">Frequência</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-message-dots icon'></i>
+                                <span class="item-nome">FeedBack</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-sidebar">
+                    <div class="aplicacao">
+                        <p class="nome-aplicacao">Configurações</p>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <i class='bx bxs-cog icon'></i>
+                                <span class="item-nome">Configuração</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-sidebar active">
+                <div class="aplicacao">
+                    <p class="nome-aplicacao">Conta</p>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-help-circle icon' ></i>
+                            <span class="item-nome">Ajuda</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="item-nome">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="cabecalho">
+            <div class="titulo">
+                <h1>Frequência de Aluno</h1>
+            </div>
+            <div class="informacoes">
+                <p id="nome">Aluno: Guilherme Rodrigues Esteves</p>
+                <p>Matricula: 00000000</p>
+            </div>
+        </div>
+        <div class="filtros">
+            <form class="filtro-frequencia">
+                <input type="checkbox" id="faltas" name="faltas" value="Bike">
+                <label for="faltas"> Faltas</label>
+                <input type="checkbox" id="aula-presente" name="aula-presente" value="Car">
+                <label for="aula-presente"> Aulas Presentes</label><br>
+            </form>
+        </div>
+        <div class="tabela-frequencia">
+            <table class="tabela" border="0" style="border-color: #011633;">
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-checked'></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="primeiro" table align="left">DD/MM/AAAA</td>
+                    <td class="segundo" id="selecionar" table align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <p>Quantidades de Faltas: 5 faltas</p>
+            <a class="botao" href="#">
+                Voltar
+            </a>
+        </div>
+    </main>
+    <!--Links-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+      integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+      crossorigin="anonymous"
+    ></script> <!--JQUERY-->
+    <script src="../../js/scripts.js"></script> <!--JavaScript-->
+</body>
+</html>

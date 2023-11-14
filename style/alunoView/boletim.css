@@ -1,16 +1,35 @@
+h1{
+    font-size: 60px !important;
+    font-weight: bold;
+}
+
+.informacoes{
+    margin-bottom: 5vh !important;
+}
+
+div.content.boletim {
+    position: absolute;
+    top: 10vh;
+    left: 26% !important;
+    width: 115vh;
+
+}
+
+.sidebar:not(.active) > .nav > .item-sidebar > ul{
+    width: 200px !important;
+}
+
 .content.boletim{
-    margin-left: auto;
+    left: 50vh;
+    margin-left: 50%;
     margin-right: auto;
-    top: 20vh;
-    left: 30%;
-    max-width: 90%;
+    max-width: 70%;
     height: 100vh;
 }
 
 @media screen and (max-width: 700px) {
     div.content.boletim {
         position: absolute;
-        top: 75vh;
         left: 14%;
         max-width: 90%;
         overflow-x: scroll;
@@ -20,7 +39,6 @@
 @media screen and (max-width: 600px) {
     div.content.boletim {
       position: absolute;
-      top: 75vh;
       left: 14%;
       max-width: 90%;
       overflow-x: scroll;
