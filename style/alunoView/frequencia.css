@@ -1,0 +1,602 @@
+main .titulo {
+    padding-top: 50px !important;
+    text-align: center !important;
+    font-size: 30px !important;
+}
+
+main .informacoes {
+    padding-top: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    justify-content: center !important;
+    gap: 160px !important;
+    font-size: 20px !important;
+}
+
+main .filtros {
+    align-items: center !important;
+}
+
+main .filtro-frequencia {
+    margin-left: 230px !important;
+    margin-top: 30px !important;
+}
+
+main #aula-presente {
+    margin-left: 5px !important;
+}
+
+main .tabela-frequencia {
+    display: flex !important;
+    justify-content: center !important;
+    overflow-y: auto !important;
+}
+
+main .tabela {
+    height: 400px !important;
+    width: 1000px !important;
+    max-width: 1000px !important;
+    min-height: 400px !important;
+    margin-top: 5px !important;
+    border-radius: 30px !important;
+    border: 2px solid #011633 !important; 
+    box-shadow: none !important;
+    border-collapse: collapse !important;
+    overflow-y: auto !important;
+}
+th, td {
+    border: 2px solid #011633 !important;
+}
+
+main .tabela .primeiro {
+    padding-left: 10px !important;
+}
+
+main .tabela .segundo i {
+    font-size: 25px !important;
+}
+
+main .tabela .segundo td {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+main .footer {
+    margin-top: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin-left: 230px !important;
+    gap: 655px !important;
+}
+
+main .footer .botao {
+    background-color: #011633 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    width: 100px !important;
+    height: 37px !important;
+    font-size: 16px !important;
+    position: relative !important;
+    outline: none !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important; 
+}
+@media screen and (max-width: 1440px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main .titulo {
+        text-align: center !important;
+        font-size: 18px !important;
+        padding-top: 40px !important;
+    }
+    main .informacoes {
+        display: flex !important;
+        padding-top: 7px !important;
+        text-align: center !important;
+        font-size: 16px !important;
+        gap: 70px !important;
+    }
+    main .filtros {
+        display: flex !important;
+        align-items: center !important;
+    }
+    main .filtro-frequencia {
+        margin-top: 20px !important;
+        margin-left: 40px !important;
+        text-align: left !important;
+        font-size: 16px !important;
+    }
+    main #aula-presente {
+        margin-left: 2px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 100px !important;
+        width: 1250px !important;
+        max-width: 1250px !important;
+        max-height: 100px !important;
+        margin-top: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .tabela .segundo td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main .footer {
+        display: flex !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-left: 60px !important;
+        gap: 920px !important;
+    }
+    main .footer .botao {
+        margin-top: 0px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 90px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}
+
+@media screen and (max-width: 1151px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main .titulo {
+        text-align: center !important;
+        font-size: 18px !important;
+        padding-top: 40px !important;
+    }
+    main .informacoes {
+        display: flex !important;
+        padding-top: 7px !important;
+        text-align: center !important;
+        font-size: 16px !important;
+        gap: 70px !important;
+    }
+    main .filtros {
+        display: flex !important;
+        align-items: center !important;
+    }
+    main .filtro-frequencia {
+        margin-top: 30px !important;
+        margin-left: 55px !important;
+        text-align: left !important;
+        font-size: 12px !important;
+    }
+    main #aula-presente {
+        margin-left: 2px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 100px !important;
+        width: 980px !important;
+        max-width: 980px !important;
+        max-height: 100px !important;
+        margin-top: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .tabela .segundo td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main .footer {
+        display: flex !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-left: 40px !important;
+        gap: 670px !important;
+    }
+    main .footer .botao {
+        margin-top: 0px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 90px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main .titulo {
+        text-align: center !important;
+        font-size: 18px !important;
+        padding-top: 40px !important;
+    }
+    main .informacoes {
+        display: flex !important;
+        padding-top: 7px !important;
+        text-align: center !important;
+        font-size: 16px !important;
+        gap: 70px !important;
+    }
+    main .filtros {
+        display: flex !important;
+        align-items: center !important;
+    }
+    main .filtro-frequencia {
+        margin-top: 30px !important;
+        margin-left: 55px !important;
+        text-align: left !important;
+        font-size: 12px !important;
+    }
+    main #aula-presente {
+        margin-left: 2px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 100px !important;
+        width: 830px !important;
+        max-width: 830px !important;
+        max-height: 100px !important;
+        margin-top: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .tabela .segundo td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main .footer {
+        display: flex !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-left: 60px !important;
+        gap: 500px !important;
+    }
+    main .footer .botao {
+        margin-top: 0px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 90px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}
+
+@media screen and (max-width: 780px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main .titulo {
+        text-align: center !important;
+        font-size: 18px !important;
+        padding-top: 40px !important;
+    }
+    main .informacoes {
+        display: flex !important;
+        padding-top: 7px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        gap: 70px !important;
+    }
+    main .filtros {
+        display: flex !important;
+        align-items: center !important;
+    }
+    main .filtro-frequencia {
+        margin-top: 30px !important;
+        margin-left: 55px !important;
+        text-align: left !important;
+        font-size: 12px !important;
+    }
+    main #aula-presente {
+        margin-left: 2px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 100px !important;
+        width: 620px !important;
+        max-width: 620px !important;
+        max-height: 100px !important;
+        margin-top: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .tabela .segundo td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main .footer {
+        display: flex !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-left: 30px !important;
+        gap: 300px !important;
+    }
+    main .footer .botao {
+        margin-top: 0px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 90px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main .titulo {
+        text-align: center !important;
+        font-size: 14px !important;
+        padding-top: 40px !important;
+    }
+    main .informacoes {
+        display: block !important;
+        padding-top: 10px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+        gap: 0px !important;
+    }
+    main .filtros {
+        display: flex !important;
+        align-items: center !important;
+    }
+    main .filtro-frequencia {
+        margin-top: 30px !important;
+        margin-left: 10px !important;
+        text-align: left !important;
+        font-size: 12px !important;
+    }
+    main #aula-presente {
+        margin-left: 2px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 400px !important;
+        width: 380px !important;
+        max-width: 380px !important;
+        max-height: 400px !important;
+        margin-top: 10px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .tabela .segundo td {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    main .footer {
+        display: flex !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        text-align: center !important;
+        margin-left: 10px !important;
+        gap: 60px !important;
+    }
+    main .footer .botao {
+        margin-top: 0px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 90px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    main {
+        padding-left: 80px !important;
+    }
+    main .titulo {
+        margin-left: 0px !important;
+        display: block !important;
+        font-size: 10px !important;
+        text-align: center !important;
+        padding-top: 50px !important;
+    }
+    main .informacoes {
+        display: block !important;
+        padding-top: 5px !important;
+        text-align: center !important;
+        font-size: 10px !important;
+    }
+    main .informacoes #nome{
+        margin-bottom: 5px !important;
+    }
+    main .filtro-frequencia {
+        display: flex !important;
+        text-align: center !important;
+        margin-top: 30px !important;
+        margin-left: 30px !important;
+        font-size: 12px !important;
+    }
+    main #aula-presente {
+        margin-left: 5px !important;
+    }
+    main .tabela-frequencia {
+        display: flex !important;
+        justify-content: center !important;
+        overflow-y: auto !important;
+    }
+    main .tabela {
+        height: 200px !important;
+        width: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+        margin-top: 5px !important;
+        border-radius: 30px !important;
+        border: 2px solid #011633 !important; 
+        box-shadow: none !important;
+        border-collapse: collapse !important;
+        overflow-y: auto !important;
+    }
+    th, td {
+        border: 2px solid #011633 !important;
+    }
+    main .tabela .primeiro {
+        padding-left: 10px !important;
+    }
+    main .tabela .segundo i {
+        font-size: 25px !important;
+    }
+    main .footer {
+        display: block !important;
+        font-size: 10px !important;
+        margin-top: 20px !important;
+        text-align: center !important;
+        margin-left: 0px !important;
+        gap: 0px !important;
+    }
+    main .footer .botao {
+        margin-left: 15px !important;
+        margin-top: 5px !important;
+        background-color: #011633 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        width: 200px !important;
+        height: 37px !important;
+        font-size: 14px !important;
+        position: relative !important;
+        outline: none !important;
+        border-radius: 8px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        cursor: pointer !important;
+        flex-shrink: 0 !important; 
+    }
+}

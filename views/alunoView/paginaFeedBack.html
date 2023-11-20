@@ -7,18 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Escola Teste</title>
-    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <meta name="theme-color" content="#7952b3">
-    <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS-->
-    <link rel="stylesheet" href="../../style/alunoView/feedback.css"> <!--CSS-->
+
+    <title>Escola Teste</title>
+
+    <!--Links-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--BootSrap-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
+    <link href="../../style/sideBar/style.css" rel="stylesheet"> <!--CSS SideBar-->
+    <link href="../../style/alunoView/provas.css" rel="stylesheet"> <!--CSS-->
 
 </head>
-
 <body>
     <aside>
-        <div class="sidebar active">
+        <div class="sidebar ativado">
             <div class="menu-menor">
                 <i class='bx bxs-chevron-left' ></i>
             </div>
@@ -37,37 +39,37 @@
                         <p class="nome-aplicacao">Aplicação</p>
                     </div>
                     <ul>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/index.html">
                                 <i class='bx bxs-grid-alt icon'></i>
                                 <span class="item-nome">Menu</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/conteudoEstudado.html">
                                 <i class='bx bxs-videos icon'></i>
                                 <span class="item-nome">Conteúdo</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/provas-atividades.html">
                                 <i class='bx bxs-file icon'></i>
                                 <span class="item-nome">Provas e Atividades</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/boletim.html">
                                 <i class='bx bxs-book icon'></i>
                                 <span class="item-nome">Notas</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/frequencia.html">
                                 <i class='bx bx-line-chart icon'></i>
                                 <span class="item-nome">Frequência</span>
                             </a>
                         </li>
-                        <li class="active">
+                        <li class="ativado">
                             <a href="../alunoView/paginaFeedBack.html">
                                 <i class='bx bxs-message-dots icon'></i>
                                 <span class="item-nome">FeedBack</span>
@@ -76,18 +78,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="item-sidebar active">
+            <div class="item-sidebar ativado">
                 <div class="aplicacao">
                     <p class="nome-aplicacao">Conta</p>
                 </div>
                 <ul>
-                    <li class="active">
+                    <li class="ativado">
                         <a href="#">
                             <i class='bx bxs-help-circle icon' ></i>
                             <span class="item-nome">Ajuda</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li class="ativado">
                         <a href="#" id="botaoSair">
                             <i class='bx bx-log-out icon'></i>
                             <span class="item-nome">Sair</span>
@@ -98,100 +100,95 @@
         </div>
     </aside>
     <main>
-        <div class="conteudo">
-            <h1 id="titulo">
-                FeedBack
-            </h1>
-            <p>
-                Professora: Andrea Ribeiro da Costa Silva
-            </p>
-            <div class="filtros">
-                <div class="datas">
-                    <div class="de">
-                        <p>De:</p>
-                        <input type="date" name="inicio" id="inicio">
-                    </div>
-                    <div class="ate">
-                        <p>Até:</p>
-                        <input type="date" name="fim" id="fim">
-                    </div>
+        <h1 id="titulo">FeedBack</h1>
+        <p id="informacoes">Professora: Andrea Ribeiro da Costa Silva</p>
+        <div class="filtros">
+            <div class="filtros-data">
+                <div class="de">
+                    <p>De:</p>
+                    <input type="date" name="inicio" id="inicio">
                 </div>
-                <div class="materias">
-                    <button class="botaomaterias">
-                        Professores
-                    </button>
-                    <div class="materias-child">
-                        <p>Andrea</p>
-                        <p>Augusto</p>
-                        <p>Roberto</p>
-                    </div>
+                <div class="ate">
+                    <p>Até:</p>
+                    <input type="date" name="fim" id="fim">
                 </div>
             </div>
-            <div class="tabelasss">
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>16/09/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
-                <div class="dados">
-                    <p>23/02/2002</p>
-                    <p>Comportamento</p>
-                </div>
+            <div class="materias">
+                <select name="listaMaterias" id="select" >
+                    <option id="name" value="" align="center">Matemática</option>
+                    <option id="name" value="" align="center">Portugês</option>
+                    <option id="name" value="" align="center">História</option>
+                    <option id="name" value="" align="center">Geografia</option>
+                    <option id="name" value="" align="center">Filosofia</option>
+                    <option id="name" value="" align="center">Sociologia</option>
+                    <option id="name" value="" align="center">Física</option>
+                    <option id="name" value="" align="center">Química</option>
+                    <option id="name" value="" align="center">Biologia</option>
+                    <option id="name" value="" align="center">Inglês</option>
+                    <option id="name" value="" align="center">Literatura</option>
+                </select>
             </div>
         </div>
+        <div class="tabela-conteudo">
+            <table class="tabelas">
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Comportamento</td>
+                </tr>
+            </table>
+        </div>
     </main>
-    <script src="../../js/sideBar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
-    integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
-    crossorigin="anonymous"
-  ></script> <!--JQUERY-->
-  <script src="../../js/scripts.js"></script> <!--JavaScript-->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../../js/validarLogin.js"></script>
+
+    <!--Links-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!--Script BootStrap-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script> <!--JQUERY-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="scripts.js"></script> <!--Scipts SideBar-->
+    <script src="../../js/validarLogin.js"></script> <!--Script Login-->
+    <script src="../../js/scripts.js"></script> <!--Script SideBar-->
 </body>
-
-
 </html>

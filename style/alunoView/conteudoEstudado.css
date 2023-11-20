@@ -1,205 +1,415 @@
-body{
-    font-weight: 550 ;
-    font-size: 18px ;
-    font-family: 'Sanchez Regular', sans-serif ;
-    color:#011633 ;
-    padding: 30px ;
-    /* height: 100vh ; */
-    margin: 0 ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#titulo{
-    font-size: 56px !important;
+main {
+    margin-bottom: 0px;
+    width: 100%;
+    color: #011633;
+    margin-left: 90px;
 }
 
-@media screen and (max-width: 700px) {
-    main{
-        margin-left: 8vh !important;
-    }
-    #titulo{
-        font-size: 24px !important;
-    }
-    .tabelasss{
-        border: 2px solid #011633  ;
-        width: 40vh  !important;
-        height: 50vh ;
-        padding-bottom: 40px ;
-        overflow: auto ;
-        border-radius: 3px !important;
-    }
+main #titulo {
+    margin-top: 50px !important;
+    text-align: center !important;
+    font-size: 60px;
 }
 
-@media screen and (max-width: 600px) {
-    #titulo{
-        font-size: 24px !important;
-    }
-    .tabelasss{
-        border: 2px solid #011633  ;
-        width: 40vh !important;
-        height: 50vh ;
-        padding-bottom: 40px ;
-        overflow: auto ;
-        border-radius: 3px !important;
-    }
+main #informacoes {
+    text-align: center;
+    padding-top: 20px !important;
+    font-size: 20px;
 }
 
-main{
-    margin-top: 8vh !important;
+.tabela-conteudo{
+    display: flex;
+    justify-content: center;
 }
 
-.Alunoid{
-    font-size: 20px ;
+.filtros {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center;
+    gap: 560px !important;
+    margin-top: 30px !important;
 }
 
-.Usuarioid{
-    font-size: 16px ;
-    opacity: 0.3 ;
-    font-weight: 400 ;  
-}
-header{
-    display:flex ;
-    justify-content: space-between ;
+.filtros-data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.Espaco1{
-
-} 
-
-.Espaco1 p {
-    margin: 0 ;
+.de{
+    gap: 7px;
+    display: flex;
+    align-items: center;
 }
 
-.Espaco1 img{
-    margin-bottom: 10px ;
-} 
-
-.Imgmensagem{
-    width: 50px ;
-    
+.ate{
+    gap: 7px;
+    display: flex;
+    align-items: center;
 }
 
-.Imgperfil{
-    width: 80px ;
-    margin-left: 20px ;
-}
-
-.Espaco2{
-    display: flex ;
-    align-items: center ;
-}
-
-.botaomaterias {
-    width: 110px !important ;
-    height: 30px !important ;
-    border-radius: 5px ;
-    cursor: pointer ;
-    background-color: white !important ;
-    border: 2px solid #011633  ;
-    margin: 0 !important ;
-}
-
-.botaomaterias:hover {
-    /* background-color: blue ; */
-}
-
-.materias {
-    position: relative ;
-    display: inline-block ;
-    margin-right: 0px ;
-}
-
-.materias-child {
-    display: none ;
-    min-width: 200px ;
-    position: fixed ;
-    background-color: white ;
-
-}
-
-
-.materias:hover .materias-child {
-    display: block ;
-}
-
-
-.blocos{
-    margin-top: 3vh !important;
-    margin-bottom: 3vh !important;
-    display:flex ;
-    justify-content: space-evenly;
-    width: 100% ;
-    align-items: center ;
-}
-
-.data{
-    display:flex ;
-    align-items: center ;
-}
-
-.conteudo{
-    display:flex ;
-    flex-direction: column ;
-    align-items: center ;
-    /* justify-content: center ; */
-    width: 100% ;
-}
-
-.data input{
-    height: min-content ;
-}
-
-.data p{
-    margin: 10px ;
-}
-
-.data input{
+.de input, .ate input {
     width: 115px ;
-    height: 24px ;
-    border: 2px solid #011633  ;
-    border-radius: 5px ;
+    height: 28px ;
+    border: 1px solid #011633  ;
+    border-radius: 2px ;
+    font-size: 16px;
 }
 
-.barralateral{
-    width: 300px ;
-    margin-top: 30px ;
+#select {
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 2px solid #011633;
+    color: #011633;
+    border-radius: 2px;
+    width: 130px;
+    height: 28px;
 }
 
-.barralateral li{
-    margin: 10px 0 ;
+option {
+    background: transparent;
+    font-size: 14px;
+    font-family: 'Sanchez', serif;
+    border: 2px solid #011633 !important;
+    color: #011633;
+    border-color: #011633;
 }
 
-.tabelasss{
-    border: 2px solid #011633  ;
-    width: 150vh ;
-    height: 50vh ;
-    padding-bottom: 40px ;
-    overflow: auto ;
-    border-radius: 3px !important;
-
+#name {
+    background-color: #ffffff;
 }
 
-.dados{
-    display: flex ;
-    justify-content: space-between ;
-    padding: 10px ;
-    border-bottom: 2px solid #011633 ;
+.tabelas {
+    height: 400px !important;
+    width: 1000px !important;
+    margin-top: 5px !important;
+    border: 2px solid #011633 !important; 
+    box-shadow: none !important;
+    border-collapse: collapse !important;
+}
+th, td {
+    border: 2px solid #011633 !important;
 }
 
-.dados p {
-    margin: 0 ;
+.tabelas #data{
+    padding-left: 10px !important;
+    width: 750px ;
+}
+.tabelas #conteudo{
+    padding-right: 20px !important;
 }
 
-.botaovoltar button {
-    width: 90px ;
-    height: 30px ;
-    margin-top: 10px ;
-    background-color: #011633 ;
-    color: white ;
-    border-radius: 5px ;
+@media screen and (max-width: 1440px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main #titulo{
+        margin-top: 30px !important;
+        font-size: 60px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main #informacoes{
+        font-size: 22px !important;
+        padding-top: 5px !important;
+    }
+    main .filtros {
+        align-items: center !important;
+        margin-top: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 450px !important;
+    }
+    main .filtros-data {
+        align-items: center !important;
+        padding-left: 10px !important ;
+        padding-top: 0px !important;
+        display: flex !important;
+        font-size: 18px !important;
+        gap: 10px !important;
+        justify-content: center;
+    }
+    main .filtros-data input{
+        width: 150px;
+        display: flex !important;
+        font-size: 18px !important;
+        gap: 3px !important;
+    }
+    main .materias{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 0px!important;
+    }
+
+    main .materias #select{
+        color: #011633;
+        font-size: 18px;
+        padding-left: 0px !important;
+        width: 140px !important;
+    }
+    main .tabela-conteudo{
+        padding: 0 20px !important;
+    }
+
+    main .tabelas{
+        font-size: 18px !important;
+    }
+    .tabelas #data{
+        width: 700px !important;
+    }
+    .tabelas #conteudo{
+        padding: 0 10px !important;
+    }
 }
 
-.botaovoltar {
-    width: 100% ;
-    
+@media screen and (max-width: 1024px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main #titulo{
+        margin-top: 30px !important;
+        font-size: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main #informacoes{
+        font-size: 16px !important;
+        padding-top: 5px !important;
+    }
+    main .filtros {
+        align-items: center !important;
+        margin-top: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 440px !important;
+    }
+    main .filtros-data {
+        align-items: center !important;
+        padding-left: 10px !important ;
+        padding-top: 0px !important;
+        display: flex !important;
+        font-size: 14px !important;
+        gap: 10px !important;
+        justify-content: center;
+    }
+    main .filtros-data input{
+        width: 120px;
+        display: flex !important;
+        font-size: 14px !important;
+        gap: 3px !important;
+    }
+    main .materias{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 0px!important;
+    }
+
+    main .materias #select{
+        font-size: 14px;
+        padding-left: 0px !important;
+        width: 120px !important;
+    }
+    main .tabela-conteudo{
+        padding: 0 20px !important;
+    }
+
+    main .tabelas{
+        font-size: 16px !important;
+    }
+    .tabelas #data{
+        width: 700px !important;
+    }
+    .tabelas #conteudo{
+        padding: 0 10px !important;
+    }
 }
 
+@media screen and (max-width: 780px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main #titulo{
+        margin-top: 30px !important;
+        font-size: 40px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main #informacoes{
+        font-size: 16px !important;
+        padding-top: 5px !important;
+    }
+    main .filtros {
+        align-items: center !important;
+        margin-top: 30px !important;
+        display: flex !important;
+        justify-content: center !important;
+        gap: 180px !important;
+    }
+    main .filtros-data {
+        align-items: center !important;
+        padding-left: 10px !important ;
+        padding-top: 0px !important;
+        display: flex !important;
+        font-size: 12px !important;
+        gap: 10px !important;
+        justify-content: center;
+    }
+    main .filtros-data input{
+        width: 120px;
+        display: flex !important;
+        font-size: 14px !important;
+        gap: 3px !important;
+    }
+    main .materias{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 0px!important;
+    }
+
+    main .materias #select{
+        font-size: 14px;
+        padding-left: 0px !important;
+        width: 120px !important;
+    }
+    main .tabela-conteudo{
+        padding: 0 20px !important;
+    }
+
+    main .tabelas{
+        font-size: 16px !important;
+    }
+    .tabelas #data{
+        width: 450px !important;
+    }
+    .tabelas #conteudo{
+        padding: 0 10px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main #titulo{
+        margin-top: 50px !important;
+        font-size: 24px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main #informacoes{
+        font-size: 12px !important;
+        padding-top: 5px !important;
+    }
+    main .filtros {
+        align-items: center !important;
+        margin-top: 0 !important;
+        display: inline !important;
+        justify-content: center !important;
+        gap: 0 !important;
+    }
+    main .filtros-data {
+        padding-left: 10px !important ;
+        padding-top: 15px !important;
+        display: flex !important;
+        font-size: 12px !important;
+        gap: 10px !important;
+        justify-content: center;
+    }
+    main .filtros-data input{
+        width: 100px;
+        display: flex !important;
+        font-size: 12px !important;
+        gap: 3px !important;
+    }
+    main .materias{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 5px!important;
+    }
+
+    main .materias #select{
+        font-size: 12px;
+        padding-left: 0px !important;
+        width: 120px !important;
+    }
+    main .tabela-conteudo{
+        padding: 0 3px !important;
+    }
+    main .tabelas{
+        font-size: 14px !important;
+    }
+    .tabelas #data{
+        width: 120px !important;
+    }
+    .tabelas #conteudo{
+        padding: 0 00px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        padding-left: 90px !important;
+    }
+    main #titulo{
+        margin-top: 50px !important;
+        font-size: 24px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    main #informacoes{
+        font-size: 12px !important;
+        padding-top: 5px !important;
+    }
+    main .filtros {
+        align-items: center !important;
+        margin-top: 0 !important;
+        display: inline !important;
+        justify-content: center !important;
+        gap: 0 !important;
+    }
+    main .filtros-data {
+        padding-left: 10px !important ;
+        padding-top: 5px !important;
+        display: flex !important;
+        font-size: 12px !important;
+        gap: 03px !important;
+    }
+    main .filtros-data input{
+        width: 80px;
+        display: flex !important;
+        font-size: 12px !important;
+        gap: 3px !important;
+    }
+    main .materias{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-top: 5px!important;
+    }
+
+    main .materias #select{
+        font-size: 12px;
+        padding-left: 0px !important;
+        width: 90px !important;
+    }
+    main .tabela-conteudo{
+        padding: 0 3px !important;
+    }
+    .tabelas #data{
+        padding: 0 !important;
+        width: 90px !important;
+    }
+    main .tabelas{
+        font-size: 14px !important;
+    }
+}
