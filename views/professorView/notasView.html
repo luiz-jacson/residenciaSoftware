@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Escola Teste</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sign-in/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="theme-color" content="#7952b3">
+    <link href="../../style/alunoView/boletim.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
+
+</head>
+
+<body>
+    <aside>
+        <div class="sidebar active">
+            <div class="menu-menor">
+                <i class='bx bxs-chevron-left'></i>
+            </div>
+            <div class="head">
+                <div class="usuario-img">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="detalhes-usuario">
+                    <p class="nome-usuario">Guilherme Esteves</p>
+                    <p class="matricula-usuario">000000000</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="item-sidebar">
+                    <div class="aplicacao">
+                        <p class="nome-aplicacao">Aplicação</p>
+                    </div>
+                    <ul>
+                        <li class="active">
+                            <a href="../professorView/index.html">
+                                <i class='bx bxs-grid-alt icon'></i>
+                                <span class="item-nome">Menu</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../professorView/planejamentoView.html">
+                                <i class='bx bxs-videos icon'></i>
+                                <span class="item-nome">Planejamento do Dia</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../professorView/provasView.html">
+                                <i class='bx bxs-file icon'></i>
+                                <span class="item-nome">Provas e Atividades</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../professorView/notasView.html">
+                                <i class='bx bxs-book icon'></i>
+                                <span class="item-nome">Notas</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="../professorView/frequenciaView.html">
+                                <i class='bx bx-line-chart icon'></i>
+                                <span class="item-nome">Frequência</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="">
+                                <i class='bx bxs-message-dots icon'></i>
+                                <span class="item-nome">FeedBack</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-sidebar active">
+                <div class="aplicacao">
+                    <p class="nome-aplicacao">Conta</p>
+                </div>
+                <ul>
+                    <li class="active">
+                        <a href="#">
+                            <i class='bx bxs-help-circle icon'></i>
+                            <span class="item-nome">Ajuda</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#" id="botaoSair">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="item-nome">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="content boletim text-center">
+            <div class="cabecalho">
+                <div class="titulo">
+                    <h1>Boletim</h1>
+                </div>
+                <div class="informacoes">
+                    <p id="nome">Aluno: Guilherme Rodrigues Esteves</p>
+                    <p>Matricula: 00000000</p>
+                </div>
+            </div>
+            <table class="table boletim">
+                <thead>
+                    <tr>
+                        <th scope="col">Unidade</th>
+                        <th scope="col">Português</th>
+                        <th scope="col">Matemática</th>
+                        <th scope="col">Redação</th>
+                        <th scope="col">Biologia</th>
+                        <th scope="col">Química</th>
+                        <th scope="col">Física</th>
+                        <th scope="col">Filosofia</th>
+                        <th scope="col">Sociologia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1ª</th>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2ª</th>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3ª</th>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4ª</th>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Média</th>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                        <td>8.2</td>
+                        <td>9.3</td>
+                        <td>7.4</td>
+                        <td>8.5</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../../js/validarLogin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous"></script>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+
+</html>

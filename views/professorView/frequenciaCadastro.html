@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--BootStrap-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
     <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS SideBar-->
-    <link href="../../style/professorView/menuProfessor.css" rel="stylesheet"> <!--CSS-->
+    <link href="../../style/professorView/chamada.css" rel="stylesheet"> <!--CSS-->
 
-    <title>Menu -</title>
+    <title>Chamada</title>
 </head>
-
 <body>
     <aside>
         <div class="sidebar ativado">
@@ -100,54 +98,107 @@
         </div>
     </aside>
     <main>
-        <div class="botoes">
-            <div class="box-frequencia">
-                <a href="../professorView/frequenciaMenu.html">
-                    <div class="box">
-
-                    </div>
-                </a>
-                <a href="../professorView/frequenciaMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Frequência</span>
-                    </div>
-                </a>
+        <h1 id="titulo">Chamada</h1>
+        <div class="filtros">
+            <div class="filtros-data">
+                <div class="data">
+                    <input type="date" name="inicio" id="inicio">
+                </div>
             </div>
-            <div class="box-notas">
-                <a href="../professorView/notasMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/notasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Notas</span>
-                    </div>
-                </a>
+            <div class="materias">
+                <select name="listaMaterias" id="select" >
+                    <option id="name" value="" align="center">Turmas 1</option>
+                    <option id="name" value="" align="center">Turmas 2</option>
+                    <option id="name" value="" align="center">Turmas 3</option>
+                    <option id="name" value="" align="center">Turmas 1</option>
+                </select>
             </div>
-            <div class="box-listas">
-                <a href="../professorView/planejamentoMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/planejamentoMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Planejamento de Aulas</span>
-                    </div>
-                </a>
+        </div>
+        <div class="tabela-conteudo">
+            <table class="tabelas">
+                <tr>
+                    <td id="nome-aluno">1- Guilherme Rodrigues Esteves</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">2- Nilton Linhares Correa</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">3- Igor Fabiano Alves Bonfim</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">4- Matheus Rocha Santos</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">5- Kauê Lima Cardoso</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">6- Luan Silva Castro</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">7- Mariana Costa Ferreira</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">8- Beatriz Cardoso Santos</td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">12- </td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="nome-aluno">13- </td>
+                    <td id="matricula" align="right">000000000</td>
+                    <td id="logo" align="center">
+                        <i class='bx bx-checkbox-minus' ></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <div class="botoes-esquerda">
+                <a class="botao" href="../professorView/">Voltar</a>
             </div>
-            <div class="box-listas">
-                <a href="../professorView/provasMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/provasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Provas e Atividades</span>
-                    </div>
-                </a>
+            <div class="botoes-direita">
+                <a class="botao" href="">Cancelar</a>
+                <a class="botao" href="">Salvar</a>
             </div>
         </div>
     </main>
+
     <!--Links-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Script BootStrap-->
     <script src="../../js/validarLogin.js"></script> <!--Script Validar Login-->
@@ -155,5 +206,4 @@
     <script src="../../style/sideBar/scripts.js"></script> <!--Script SideBar-->
     <script src="../../js/scripts.js"></script> <!--JavaScript-->
 </body>
-
 </html>

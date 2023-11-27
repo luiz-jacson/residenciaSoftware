@@ -1,0 +1,40 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+main {
+    margin-bottom: 0px !important;
+    width: 100% !important;
+    color: #011633 !important;
+    margin-left: 90px !important ;
+    padding-left: 0 !important;
+}
+
+main .botoes{
+    margin-left: 280px !important;
+    margin-top: 100px !important;
+    display: flex !important;
+    gap: 80px !important;
+}
+
+main .box-frequencia, .box-notas, .box-listas {
+    align-items: center !important;
+}
+
+main .box {
+    align-items: center !important;
+    width: 263px !important;
+    height: 190px !important;
+    flex-shrink: 0 !important;
+    background-color: #011633 !important;
+    border-radius: 21px !important;
+}
+
+main .titulo-box{
+    margin-top: 5px !important;
+    align-items: center !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}

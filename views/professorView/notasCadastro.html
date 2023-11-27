@@ -13,9 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--BootStrap-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
     <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS SideBar-->
-    <link href="../../style/professorView/menuProfessor.css" rel="stylesheet"> <!--CSS-->
+    <link href="../../style/professorView/chamada.css" rel="stylesheet"> <!--CSS-->
+    <link href="../../style/professorView/cadastro.css" rel="stylesheet"> <!--CSS-->
 
-    <title>Menu -</title>
+    <title>Planejamento</title>
 </head>
 
 <body>
@@ -100,54 +101,64 @@
         </div>
     </aside>
     <main>
-        <div class="botoes">
-            <div class="box-frequencia">
-                <a href="../professorView/frequenciaMenu.html">
-                    <div class="box">
-
+        <h1 id="titulo">Cadastrar Nota</h1>
+        <div id="formCadastro">
+            <form>
+                <div>
+                    <label>Data da Prova:</label>
+                    <input class="dropbtn" type="date">
+                </div>
+                <div>
+                    <label>Selecione a turma: </label>
+                    <div class="dropdown">
+                        <button class="dropbtn">Turma 1</button>
+                        <div class="dropdown-content">
+                            <a href="#">Turma 1</a>
+                            <a href="#">Turma 2</a>
+                            <a href="#">Turma 3</a>
+                        </div>
                     </div>
-                </a>
-                <a href="../professorView/frequenciaMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Frequência</span>
+                </div>
+                <div>
+                    <label>Selecione o aluno: </label>
+                    <div class="dropdown">
+                        <button class="dropbtn">Luiz Jacson</button>
+                        <div class="dropdown-content">
+                            <a href="#">Luiz Jacson</a>
+                            <a href="#">Daniel Soares</a>
+                            <a href="#">Rafael Carvalho</a>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="box-notas">
-                <a href="../professorView/notasMenu.html">
-                    <div class="box">
+                </div>
+                <div>
+                    <label>Selecione a unidade: </label>
+                    <div class="dropdown">
+                        <button class="dropbtn">1ª unidade</button>
+                        <div class="dropdown-content">
+                            <a href="#">2ª unidade</a>
+                            <a href="#">3ª unidade</a>
+                            <a href="#">4ª unidade</a>
+                        </div>
                     </div>
-                </a>
-                <a href="../professorView/notasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Notas</span>
+                </div>
+                <div>
+                    <label>Nota:</label>
+                    <input type="text" class="dropbtn Text" placeholder="Digite a nota">
+                </div>
+                <div class="dvDesc">
+                    <div class="labelDesc">
+                        <label>Observação:</label>
                     </div>
-                </a>
-            </div>
-            <div class="box-listas">
-                <a href="../professorView/planejamentoMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/planejamentoMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Planejamento de Aulas</span>
-                    </div>
-                </a>
-            </div>
-            <div class="box-listas">
-                <a href="../professorView/provasMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/provasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Provas e Atividades</span>
-                    </div>
-                </a>
-            </div>
+                    <textarea class="dropbtnTextArea" placeholder="Observações sobre a nota"></textarea>
+                </div>
+                <div>
+                    <button class="botaoCadastro">Salvar</button>
+                    <button class="botaoCadastro">Voltar</button>
+                </div>
+            </form>
         </div>
     </main>
+
     <!--Links-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Script BootStrap-->
     <script src="../../js/validarLogin.js"></script> <!--Script Validar Login-->

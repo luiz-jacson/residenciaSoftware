@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <meta name="theme-color" content="#7952b3">
+
+    <title>Escola Teste</title>
+
+    <!--Links-->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--BootStrap-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
+    <link href="../../style/professorView/menuBemVindo.css" rel="stylesheet"> 
+    <link href="../../style/sideBar/style.css" rel="stylesheet"> <!--CSS SideBar-->
+    <link href="../../style/alunoView/provas.css" rel="stylesheet"> <!--CSS-->
+    
+
+</head>
+
+<body>
+    <aside>
+        <div class="sidebar ativado">
+            <div class="menu-menor">
+                <i class='bx bxs-chevron-left'></i>
+            </div>
+            <div class="head">
+                <div class="usuario-img">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="detalhes-usuario">
+                    <p class="nome-usuario">Guilherme Esteves</p>
+                    <p class="matricula-usuario">000000000</p>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="item-sidebar">
+                    <div class="aplicacao">
+                        <p class="nome-aplicacao">Aplicação</p>
+                    </div>
+                    <ul>
+                        <li class="ativado">
+                            <a href="../professorView/index.html">
+                                <i class='bx bxs-grid-alt icon'></i>
+                                <span class="item-nome">Menu</span>
+                            </a>
+                        </li>
+                        <li class="ativado">
+                            <a href="../professorView/planejamentoMenu.html">
+                                <i class='bx bxs-videos icon'></i>
+                                <span class="item-nome">Planjamento do Dia</span>
+                            </a>
+                        </li>
+                        <li class="ativado">
+                            <a href="../professorView/provasMenu.html">
+                                <i class='bx bxs-file icon'></i>
+                                <span class="item-nome">Provas e Atividades</span>
+                            </a>
+                        </li>
+                        <li class="ativado">
+                            <a href="../professorView/notasMenu.html">
+                                <i class='bx bxs-book icon'></i>
+                                <span class="item-nome">Notas</span>
+                            </a>
+                        </li>
+                        <li class="ativado">
+                            <a href="../professorView/frequenciaMenu.html">
+                                <i class='bx bx-line-chart icon'></i>
+                                <span class="item-nome">Frequência</span>
+                            </a>
+                        </li>
+                        <li class="ativado">
+                            <a href="">
+                                <i class='bx bxs-message-dots icon'></i>
+                                <span class="item-nome">FeedBack</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item-sidebar ativado">
+                <div class="aplicacao">
+                    <p class="nome-aplicacao">Conta</p>
+                </div>
+                <ul>
+                    <li class="ativado">
+                        <a href="#">
+                            <i class='bx bxs-help-circle icon'></i>
+                            <span class="item-nome">Ajuda</span>
+                        </a>
+                    </li>
+                    <li class="ativado">
+                        <a href="#" id="botaoSair">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="item-nome">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <h1 id="titulo">Provas e Atividades</h1>
+        <p id="informacoes">Professora: Andrea Ribeiro da Costa Silva</p>
+        <div class="filtros">
+            <div class="filtros-data">
+                <div class="de">
+                    <p>De:</p>
+                    <input type="date" name="inicio" id="inicio">
+                </div>
+                <div class="ate">
+                    <p>Até:</p>
+                    <input type="date" name="fim" id="fim">
+                </div>
+            </div>
+            <div class="materias">
+                <select name="listaMaterias" id="select" >
+                    <option id="name" value="" align="center">Turma 1</option>
+                    <option id="name" value="" align="center">Turma 2</option>
+                    <option id="name" value="" align="center">Turma 3</option>
+                </select>
+            </div>
+        </div>
+        <div class="tabela-conteudo">
+            <table class="tabelas">
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 1</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Prova</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Prova</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Simulado</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 2</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 4</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Simulado</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 4</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Prova</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 5</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 6</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Atividade 7</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="center">Simulado</td>
+                    <td id="logo" align="center"><i class='bx bxs-file-import'></i></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--BootStrap-->
+<script src="../../js/validarLogin.js"></script> <!--Validar Login-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script> <!--JQUERY-->
+<script src="../../js/scripts.js"></script> <!--Script SideBar-->
+
+</html>

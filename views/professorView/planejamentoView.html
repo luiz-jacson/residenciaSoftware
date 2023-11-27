@@ -2,21 +2,23 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <meta name="theme-color" content="#7952b3">
+    
+    <title>Escola Teste</title>
 
     <!--Links-->
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> <!--BootStrap-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--BoxIcons-->
-    <link rel="stylesheet" href="../../style/sideBar/style.css"> <!--CSS SideBar-->
-    <link href="../../style/professorView/menuProfessor.css" rel="stylesheet"> <!--CSS-->
-
-    <title>Menu -</title>
-</head>
+    <link rel="stylesheet" href="style.css"> <!--CSS SideBar-->
+    <link href="../../style/alunoView/conteudoEstudado.css" rel="stylesheet"> <!--CSS-->
+    <link href="../../style/sideBar/style.css" rel="stylesheet"> <!--CSS SideBar-->
+    <link href="../../style/alunoView/provas.css" rel="stylesheet"> <!--CSS-->
+</head> 
 
 <body>
     <aside>
@@ -100,60 +102,86 @@
         </div>
     </aside>
     <main>
-        <div class="botoes">
-            <div class="box-frequencia">
-                <a href="../professorView/frequenciaMenu.html">
-                    <div class="box">
-
-                    </div>
-                </a>
-                <a href="../professorView/frequenciaMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Frequência</span>
-                    </div>
-                </a>
+        <h1 id="titulo">Planejamento do Dia</h1>
+        <p id="informacoes">Professora: Andrea Ribeiro da Costa Silva</p>
+        <div class="filtros">
+            <div class="filtros-data">
+                <div class="de">
+                    <p>De:</p>
+                    <input type="date" name="inicio" id="inicio">
+                </div>
+                <div class="ate">
+                    <p>Até:</p>
+                    <input type="date" name="fim" id="fim">
+                </div>
             </div>
-            <div class="box-notas">
-                <a href="../professorView/notasMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/notasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Notas</span>
-                    </div>
-                </a>
-            </div>
-            <div class="box-listas">
-                <a href="../professorView/planejamentoMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/planejamentoMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Planejamento de Aulas</span>
-                    </div>
-                </a>
-            </div>
-            <div class="box-listas">
-                <a href="../professorView/provasMenu.html">
-                    <div class="box">
-                    </div>
-                </a>
-                <a href="../professorView/provasMenu.html" style="text-decoration: none; color: #011633;">
-                    <div class="titulo-box">
-                        <span>Provas e Atividades</span>
-                    </div>
-                </a>
+            <div class="materias">
+                <select name="listaMaterias" id="select" >
+                    <option id="name" value="" align="center">Turma 1</option>
+                    <option id="name" value="" align="center">Turma 2</option>
+                    <option id="name" value="" align="center">Turma 3</option>
+                </select>
             </div>
         </div>
+        <div class="tabela-conteudo">
+            <table class="tabelas">
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Genero</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Conjução</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Genero</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Genero</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Genero</td>
+                </tr>
+                <tr>
+                    <td id="data">23/11/2023</td>
+                    <td id="conteudo" align="right">Interpretção de Texto</td>
+                </tr>
+            </table>
+        </div>
+        
     </main>
     <!--Links-->
+    <script src="../../js/sideBar.js"></script> <!--Script SideBar-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Script BootStrap-->
     <script src="../../js/validarLogin.js"></script> <!--Script Validar Login-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script> <!--JQUERY-->
-    <script src="../../style/sideBar/scripts.js"></script> <!--Script SideBar-->
-    <script src="../../js/scripts.js"></script> <!--JavaScript-->
+    <script src="../../js/scripts.js"></script> <!--Script SideBar-->
 </body>
-
 </html>
